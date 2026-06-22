@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+  <body>
+
+        <!--<div>
+
+            <h1 style="color: blue; text-align:center"> Welcome to my OS!</h1>
+            <h2 style="color: blue; text-align:center"> Hello world! My name is Reyansh and I am a 14 year old boy who loves to code. Here is my WebOS and I hope you enjoy!</h2>
+            <p style="color: blue"> Here are some application for you to try out!</p>
+            <a href="https://www.google.com/">Google</a>
+            <a href="https://www.youtube.com/">YouTube</a>
+            <a href="https://www.instagram.com/">Instagram</a>
+            <a href="https://www.facebook.com/">Facebook</a>
+
+        </div>-->
+
+      <style>
+        body {
+            background-image: url('./webOSimg.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+        }
+      </style>
+
+<div
+  style="
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 16px;
+
+    background: rgba(0, 30, 60, 0.35);
+    backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(0, 180, 255, 0.3);
+    border-radius: 18px;
+
+    box-shadow:
+      0 0 20px rgba(0, 180, 255, 0.2),
+      inset 0 0 10px rgba(255,255,255,0.05);
+  ">
+
+    <p id="windowopen"
+      style="
+        margin: 0;
+        font-weight: 700;
+        color: #66d9ff;
+
+        background: rgba(0, 140, 255, 0.15);
+
+        padding: 8px 16px;
+        border-radius: 12px;
+
+        border: 1px solid rgba(0,180,255,0.3);
+
+        cursor: pointer;
+
+        text-shadow: 0 0 8px #00bfff;
+      ">
+        Reyansh's Web OS
+    </p>
+
+    <p
+      style="
+        margin: 0;
+        color: white;
+        font-weight: 500;
+
+        background: rgba(255,255,255,0.08);
+
+        padding: 8px 16px;
+        border-radius: 12px;
+
+        border: 1px solid rgba(255,255,255,0.08);
+      ">
+        Built for Efficiency
+    </p>
+
+    <p id="timeElement"
+      style="
+        margin: 0;
+        color: white;
+        font-weight: 600;
+
+        background: rgba(0, 140, 255, 0.15);
+
+        padding: 8px 16px;
+        border-radius: 12px;
+
+        border: 1px solid rgba(0,180,255,0.3);
+
+        box-shadow: 0 0 10px rgba(0,180,255,0.2);
+      ">
+        6/15/2026 4:50 PM
+    </p>
+
+</div>
+
+ <div id="window"
+  style="
+    border: 1px solid rgba(0,180,255,.4);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    position: absolute;
+    top: calc(50% - 110px);
+    left: calc(50% - 200px);
+    backdrop-filter: blur(20px);
+    background: rgba(0,30,60,.35);
+    box-shadow:
+      0 0 20px rgba(0,180,255,.4),
+      0 0 50px rgba(0,180,255,.15);
+  ">
+
+  <div class="windowheader" id="welcomeheader">
+
+    <p class="window" id="welcome">
+      WELCOME
+    </p>
+
+    <p class="closebutton" id="windowclose"></p>
+
+  </div>
+
+  <div
+    style="margin: 8px; border-radius: 16px; width: 360px; padding: 20px; background: linear-gradient(135deg, rgba(0,120,255,.9),rgba(0,200,255,.6)); box-shadow: 0 0 20px rgba(0,180,255,.4);">
+
+    <img
+      src="logo.png"
+      style="width: 72px;height: 72px;border-radius: 50%;object-fit: cover;border: 2px solid white;box-shadow:0 0 15px white,0 0 25px #00bfff;
+      "
+    />
+
+    <h1
+      style="margin: 8px 0; color: white; font-size: 28px;">
+      Reyansh's Web OS
+    </h1>
+
+    <p
+      style="margin: 0;color: white;font-size: 16px;line-height: 1.5;">
+      Reyansh's Web OS is smarter, faster, and built to bring a futuristic web experience to everyone.
+    </p>
+
+  </div>
+
+</div>
+
+
+      <script>
+
+        function updateTime() {
+            var currentTime = new Date().toLocaleString();
+            var timeText = document.querySelector("#timeElement");
+            timeText.innerHTML = currentTime;
+        }
+        setInterval(updateTime, 1000);
+
+      </script>
+        <script src="script.js"></script>
+
+        <head>
+            <script type="module" src="./script.js"></script>
+            <link rel="stylesheet" type="text/css" href="style.css" />
+        </head>
+
+
+
+  </body>
+
+</html>
