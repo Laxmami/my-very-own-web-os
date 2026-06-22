@@ -1,0 +1,26 @@
+.closebutton {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  background-color: #EC6B5E;
+  border-radius: 16px;
+  border: solid 1px rgba(0, 0, 0, 0.25);
+  margin-left: 6px;
+}
+
+.windowheader {
+  width: 100%;
+  display: flex;
+  cursor: move;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.window {
+    margin: 0px;
+    color: #66d9ff;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #00bfff
+}
